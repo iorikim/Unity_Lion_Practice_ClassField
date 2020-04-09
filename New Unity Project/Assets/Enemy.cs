@@ -19,36 +19,42 @@ public class Enemy : MonoBehaviour
     /// <summary>
     /// 怪物的移動速度
     /// </summary>
-    [Header("Monster Speed"), Range(1, 50.5f)]
-    [Tooltip("怪物的移動速度")]
+    [Header("能力值"), Range(1.0f, 50.5f)]
     public float SPEED = 10.5f;
 
     /// <summary>
     /// 怪物的攻擊力
     /// </summary>
-    [Header("Monster Attack"), Range(20, 200)]
-    [Tooltip("怪物的攻擊力")]
+    [Range(20, 200)]
     public int ATTACK = 50;
 
     /// <summary>
     /// 怪物的防禦力
     /// </summary>
-    [Header("Monster Guard"), Range(0, 100)]
+    [Range(0, 100)]
     [Tooltip("怪物的防禦力")]
     public int GUARD;
 
     /// <summary>
-    /// 裝備
+    /// 武器名稱
     /// </summary>
-    [Header("EQUIPMENT")]
-    [Tooltip("裝備")]
+    [Header("裝備")]
     public string arms;
+
+    /// <summary>
+    /// 裝備名稱
+    /// </summary>
+    public string 裝備名稱 = "皮衣";
 
     /// <summary>
     /// 是否有帶鑰匙
     /// </summary>
     [Header("其他資料")]
-    [Tooltip("是否帶有鑰匙")]
+    [Tooltip("怪物是否帶有鑰匙")]
     public bool Key = false;
-    
+
+    [Tooltip("怪物是否帶有寶物")]
+    public bool treasure = false;
+
+
 }

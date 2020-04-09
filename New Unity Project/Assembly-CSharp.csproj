@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Enemy.cs" />
+    <Compile Include="Assets\EnemyManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/409-01/Desktop/GitHub/Unity_Lion_Practice_ClassField/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
